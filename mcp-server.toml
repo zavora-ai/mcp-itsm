@@ -1,0 +1,95 @@
+server_id = "mcp_itsm"
+display_name = "ITSM Service Desk"
+version = "1.1.0"
+domain = "operations"
+sdk_version = "0.1.0"
+risk_level = "medium"
+writes_allowed = "gated"
+transports = ["stdio"]
+credentials = []
+governance_gates = []
+environments = ["development", "staging", "production"]
+
+[[tools]]
+name = "create_ticket"
+description = "Create an incident, service request, or task ticket"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_ticket"
+description = "Get full ticket details including status, assignee, SLA, notes"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "search_tickets"
+description = "Search tickets by keyword, status, assignee, or queue"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "update_ticket"
+description = "Update ticket priority, category, or service fields"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "transition_ticket"
+description = "Move ticket through valid workflow states"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "assign_ticket"
+description = "Assign ticket to a user or team"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "route_ticket"
+description = "Move ticket to a different queue/team"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "close_ticket"
+description = "Close ticket with resolution code, notes, and evidence"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_sla"
+description = "Get SLA deadlines, breach state, and time remaining"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "open_change_request"
+description = "Open a change request with risk, impact, and rollback plan"
+risk_class = "internal_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "search_knowledge"
+description = "Search knowledge base articles using TF-IDF scoring"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "handle_support_request"
+description = "Handle a support request end-to-end: classify, deduplicate, search KB, auto-resolve or create ticket"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []

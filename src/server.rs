@@ -1,3 +1,4 @@
+use adk_mcp_sdk::{HealthCheck, HealthStatus};
 use crate::store::ItsmStore;
 use crate::types::*;
 use rmcp::{handler::server::wrapper::Parameters, schemars, tool, tool_router};
@@ -427,3 +428,14 @@ impl ItsmServer {
     }
 }
 
+
+#[async_trait::async_trait]
+impl HealthCheck for ItsmServer {
+    async fn check_health(&self) -> HealthStatus {
+        HealthStatus {
+            healthy: true,
+            message: Some("operational".into()),
+            latency_ms: Some(1),
+        }
+    }
+}
