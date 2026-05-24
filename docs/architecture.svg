@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450" font-family="system-ui, -apple-system, sans-serif">
+  <defs><linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#7c3aed"/><stop offset="100%" style="stop-color:#4f46e5"/></linearGradient></defs>
+  <rect width="750" height="450" fill="#f8fafc" rx="12"/>
+  <rect x="225" y="10" width="300" height="28" rx="8" fill="url(#hg)"/>
+  <text x="375" y="29" text-anchor="middle" fill="white" font-size="12" font-weight="bold">mcp-itsm — Intelligent ITSM Architecture</text>
+
+  <rect x="275" y="48" width="200" height="34" rx="8" fill="#059669"/>
+  <text x="375" y="70" text-anchor="middle" fill="white" font-size="11" font-weight="bold">MCP Client / Agent</text>
+  <line x1="375" y1="82" x2="375" y2="105" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- Agentic layer -->
+  <rect x="100" y="110" width="550" height="70" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="375" y="130" text-anchor="middle" font-size="10" font-weight="bold" fill="#991b1b">Agentic Layer (intelligent workflows)</text>
+  <rect x="115" y="140" width="155" height="22" rx="4" fill="white" stroke="#fca5a5"/>
+  <text x="192" y="155" text-anchor="middle" font-size="8" fill="#991b1b">handle_support_request</text>
+  <rect x="280" y="140" width="100" height="22" rx="4" fill="white" stroke="#fca5a5"/>
+  <text x="330" y="155" text-anchor="middle" font-size="8" fill="#991b1b">auto_triage</text>
+  <rect x="390" y="140" width="110" height="22" rx="4" fill="white" stroke="#fca5a5"/>
+  <text x="445" y="155" text-anchor="middle" font-size="8" fill="#991b1b">diagnose_ticket</text>
+  <text x="560" y="155" text-anchor="middle" font-size="7" fill="#6b7280">TF-IDF + rules</text>
+
+  <line x1="375" y1="180" x2="375" y2="200" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- CRUD tools -->
+  <rect x="100" y="205" width="550" height="75" rx="10" fill="white" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="100" y="205" width="550" height="22" rx="10" fill="url(#hg)"/>
+  <rect x="100" y="215" width="550" height="12" fill="url(#hg)"/>
+  <text x="375" y="220" text-anchor="middle" fill="white" font-size="10" font-weight="bold">CRUD Tools (17)</text>
+  <text x="170" y="245" text-anchor="middle" font-size="8" fill="#374151">Tickets</text>
+  <text x="300" y="245" text-anchor="middle" font-size="8" fill="#374151">Changes</text>
+  <text x="430" y="245" text-anchor="middle" font-size="8" fill="#374151">Catalog</text>
+  <text x="560" y="245" text-anchor="middle" font-size="8" fill="#374151">SLA</text>
+  <text x="170" y="262" text-anchor="middle" font-size="7" fill="#6b7280">create · get · search</text>
+  <text x="170" y="272" text-anchor="middle" font-size="7" fill="#6b7280">assign · route · close</text>
+  <text x="300" y="262" text-anchor="middle" font-size="7" fill="#6b7280">create · get</text>
+  <text x="430" y="262" text-anchor="middle" font-size="7" fill="#6b7280">get · request</text>
+  <text x="560" y="262" text-anchor="middle" font-size="7" fill="#6b7280">status · breach</text>
+
+  <line x1="250" y1="280" x2="250" y2="305" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="500" y1="280" x2="500" y2="305" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- KB + Rules -->
+  <rect x="100" y="310" width="250" height="70" rx="8" fill="white" stroke="#d97706" stroke-width="2"/>
+  <rect x="100" y="310" width="250" height="20" rx="8" fill="#d97706"/><rect x="100" y="320" width="250" height="10" fill="#d97706"/>
+  <text x="225" y="325" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Knowledge Base (TF-IDF)</text>
+  <text x="225" y="347" text-anchor="middle" font-size="8" fill="#374151">create · update · delete · search</text>
+  <text x="225" y="362" text-anchor="middle" font-size="7" fill="#6b7280">Grows over time → smarter resolution</text>
+  <text x="225" y="374" text-anchor="middle" font-size="7" fill="#6b7280">Pluggable: swap for adk-rag (semantic)</text>
+
+  <rect x="380" y="310" width="270" height="70" rx="8" fill="white" stroke="#2563eb" stroke-width="2"/>
+  <rect x="380" y="310" width="270" height="20" rx="8" fill="#2563eb"/><rect x="380" y="320" width="270" height="10" fill="#2563eb"/>
+  <text x="515" y="325" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Classification Rules (configurable)</text>
+  <text x="515" y="347" text-anchor="middle" font-size="8" fill="#374151">keywords → category + queue + priority</text>
+  <text x="515" y="362" text-anchor="middle" font-size="7" fill="#6b7280">Add rules at runtime via MCP tool</text>
+  <text x="515" y="374" text-anchor="middle" font-size="7" fill="#6b7280">Urgency keywords auto-escalate priority</text>
+
+  <rect x="200" y="400" width="350" height="22" rx="11" fill="#4f46e5"/>
+  <text x="375" y="415" text-anchor="middle" fill="white" font-size="9" font-weight="bold">25 Tools · Agentic · TF-IDF · Configurable · ADK-Rust Enterprise</text>
+
+  <defs><marker id="a" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#64748b"/></marker></defs>
+</svg>
